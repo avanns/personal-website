@@ -23,6 +23,6 @@
 	.banner img {
 		object-fit: cover;
 		max-width: 100%;
-		height: calc(100vh - 100px - 100px);
+		min-height: calc(100% - var(--footer-height) - var(--footer-height));
 	}
 </style>

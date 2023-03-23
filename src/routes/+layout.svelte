@@ -27,7 +27,7 @@
 		grid-area: main;
 		flex: 1;
 		display: flex;
-		height: calc(100vh - var(--header-height) - var(--footer-height));
+		min-height: calc(100vh - var(--header-height) - var(--footer-height));
 		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
