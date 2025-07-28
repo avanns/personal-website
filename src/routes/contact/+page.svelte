@@ -11,114 +11,126 @@
 </svelte:head>
 
 <div class="contact-page">
-	<div class="text-column">
+	<div class="page-header">
 		<h1>Contact</h1>
 		<p class="intro">
 			I'm always interested in new collaborations, whether it's music production, 
 			circuit design, software development, or creative projects. Let's discuss your ideas!
 		</p>
+	</div>
 
-		{#if form?.success}
-			<div class="success-message">
-				<h3>Message Sent!</h3>
-				<p>{form.message}</p>
-			</div>
-		{/if}
-
-		<div class="contact-content">
-			<section class="contact-form">
-				<h2>Send a Message</h2>
-				<form method="POST" use:enhance>
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="text" id="name" name="name" required />
-					</div>
-					
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" required />
-					</div>
-					
-					<div class="form-group">
-						<label for="subject">Subject</label>
-						<select id="subject" name="subject" required>
-							<option value="">Select a topic</option>
-							<option value="music">Music Collaboration</option>
-							<option value="circuits">Circuit Design</option>
-							<option value="coding">Software Development</option>
-							<option value="general">General Inquiry</option>
-						</select>
-					</div>
-					
-					<div class="form-group">
-						<label for="message">Message</label>
-						<textarea id="message" name="message" rows="6" required></textarea>
-					</div>
-					
-					<button type="submit" class="submit-btn">Send Message</button>
-				</form>
-			</section>
-
-			<section class="contact-info">
-				<h2>Get In Touch</h2>
-				<div class="info-grid">
-					<div class="info-card">
-						<h3>Email</h3>
-						<p><a href="mailto:hello@aubinvanns.com">hello@aubinvanns.com</a></p>
-					</div>
-					
-					<div class="info-card">
-						<h3>Music</h3>
-						<p><a href="https://aubinvanns.bandcamp.com" target="_blank">Bandcamp</a></p>
-					</div>
-					
-					<div class="info-card">
-						<h3>Code</h3>
-						<p>
-							<a href="https://github.com/yourusername" target="_blank" class="github-link">
-								<img src={githubIcon} alt="GitHub" />
-								GitHub
-							</a>
-						</p>
-					</div>
-				</div>
-
-				<div class="availability">
-					<h3>Availability</h3>
-					<p>I'm currently available for:</p>
-					<ul>
-						<li>Custom circuit design and building</li>
-						<li>Web development projects</li>
-						<li>Music production and collaboration</li>
-						<li>Audio software development</li>
-						<li>Creative coding projects</li>
-					</ul>
-				</div>
-			</section>
+	{#if form?.success}
+		<div class="success-message">
+			<h3>Message Sent!</h3>
+			<p>{form.message}</p>
 		</div>
+	{/if}
+
+	<div class="contact-content">
+		<section class="contact-form">
+			<h2>Send a Message</h2>
+			<form method="POST" use:enhance>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<select id="subject" name="subject" required>
+						<option value="">Select a topic</option>
+						<option value="music">Music Collaboration</option>
+						<option value="circuits">Circuit Design</option>
+						<option value="coding">Software Development</option>
+						<option value="general">General Inquiry</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+				</div>
+				
+				<button type="submit" class="submit-btn">Send Message</button>
+			</form>
+		</section>
+
+		<section class="contact-info">
+			<h2>Get In Touch</h2>
+			<div class="info-grid">
+				<div class="info-card">
+					<h3>Email</h3>
+					<p><a href="mailto:hello@aubinvanns.com">hello@aubinvanns.com</a></p>
+				</div>
+				
+				<div class="info-card">
+					<h3>Music</h3>
+					<p><a href="https://aubinvanns.bandcamp.com" target="_blank">Bandcamp</a></p>
+				</div>
+				
+				<div class="info-card">
+					<h3>Code</h3>
+					<p>
+						<a href="https://github.com/yourusername" target="_blank" class="github-link">
+							<img src={githubIcon} alt="GitHub" />
+							GitHub
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="availability">
+				<h3>Availability</h3>
+				<p>I'm currently available for:</p>
+				<ul>
+					<li>Custom circuit design and building</li>
+					<li>Web development projects</li>
+					<li>Music production and collaboration</li>
+					<li>Audio software development</li>
+					<li>Creative coding projects</li>
+				</ul>
+			</div>
+		</section>
 	</div>
 </div>
 
 <style>
 	.contact-page {
-		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.page-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.intro {
-		text-align: center;
-		font-size: 1.1rem;
-		margin-bottom: 3rem;
-		opacity: 0.9;
+		font-size: 1.2rem;
+		color: var(--color-text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.7;
 	}
 
 	.success-message {
 		background: rgba(76, 175, 80, 0.1);
 		border: 1px solid rgba(76, 175, 80, 0.3);
-		border-radius: 8px;
-		padding: 1.5rem;
-		margin-bottom: 2rem;
+		border-radius: 12px;
+		padding: 2rem;
+		margin-bottom: 3rem;
 		text-align: center;
-		backdrop-filter: blur(10px);
 	}
 
 	.success-message h3 {
@@ -128,20 +140,21 @@
 
 	.success-message p {
 		margin: 0;
-		opacity: 0.9;
+		color: var(--color-text-secondary);
 	}
 
 	.contact-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 3rem;
+		gap: 4rem;
 		margin-top: 2rem;
 	}
 
 	.contact-form h2,
 	.contact-info h2 {
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 		text-align: center;
+		font-size: 1.75rem;
 	}
 
 	.form-group {
@@ -151,7 +164,7 @@
 	.form-group label {
 		display: block;
 		margin-bottom: 0.5rem;
-		font-weight: bold;
+		font-weight: 600;
 		color: var(--color-text);
 	}
 
@@ -160,13 +173,12 @@
 	.form-group textarea {
 		width: 100%;
 		padding: 0.75rem;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-		border-radius: 4px;
-		background: rgba(255, 255, 255, 0.1);
+		border: 1px solid var(--color-border);
+		border-radius: 6px;
+		background: var(--color-bg);
 		color: var(--color-text);
 		font-family: inherit;
 		font-size: 1rem;
-		backdrop-filter: blur(10px);
 		transition: border-color 0.3s ease;
 		box-sizing: border-box;
 	}
@@ -175,7 +187,7 @@
 	.form-group select:focus,
 	.form-group textarea:focus {
 		outline: none;
-		border-color: var(--color-theme-1);
+		border-color: var(--color-accent);
 	}
 
 	.form-group textarea {
@@ -185,19 +197,19 @@
 
 	.submit-btn {
 		width: 100%;
-		background: var(--color-theme-1);
+		background: var(--color-accent);
 		color: white;
 		border: none;
 		padding: 0.75rem 1.5rem;
-		border-radius: 4px;
+		border-radius: 6px;
 		font-size: 1rem;
-		font-weight: bold;
+		font-weight: 600;
 		cursor: pointer;
 		transition: background 0.3s ease;
 	}
 
 	.submit-btn:hover {
-		background: #e03500;
+		background: var(--color-accent-hover);
 	}
 
 	.info-grid {
@@ -207,16 +219,20 @@
 	}
 
 	.info-card {
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		border-radius: 8px;
+		background: var(--color-bg);
+		border: 1px solid var(--color-border);
+		border-radius: 12px;
 		padding: 1.5rem;
-		backdrop-filter: blur(10px);
+		transition: border-color 0.3s ease;
+	}
+
+	.info-card:hover {
+		border-color: var(--color-accent);
 	}
 
 	.info-card h3 {
 		margin: 0 0 0.5rem 0;
-		color: var(--color-theme-1);
+		color: var(--color-text);
 		font-size: 1.1rem;
 	}
 
@@ -225,12 +241,13 @@
 	}
 
 	.info-card a {
-		color: var(--color-theme-1);
+		color: var(--color-accent);
 		text-decoration: none;
 	}
 
 	.info-card a:hover {
-		text-decoration: underline;
+		color: var(--color-accent-hover);
+		text-decoration: none;
 	}
 
 	.github-link {
@@ -245,21 +262,21 @@
 	}
 
 	.availability {
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		border-radius: 8px;
+		background: var(--color-bg);
+		border: 1px solid var(--color-border);
+		border-radius: 12px;
 		padding: 1.5rem;
-		backdrop-filter: blur(10px);
 	}
 
 	.availability h3 {
 		margin: 0 0 1rem 0;
-		color: var(--color-theme-1);
+		color: var(--color-text);
 		font-size: 1.1rem;
 	}
 
 	.availability p {
 		margin: 0 0 1rem 0;
+		color: var(--color-text-secondary);
 	}
 
 	.availability ul {
@@ -270,12 +287,17 @@
 	.availability li {
 		margin-bottom: 0.5rem;
 		line-height: 1.4;
+		color: var(--color-text-secondary);
 	}
 
 	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2.5rem;
+		}
+
 		.contact-content {
 			grid-template-columns: 1fr;
-			gap: 2rem;
+			gap: 3rem;
 		}
 	}
 </style> 

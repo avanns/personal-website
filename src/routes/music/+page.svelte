@@ -16,78 +16,45 @@
 	<div class="page-header">
 		<h1>Music</h1>
 		<p class="intro">
-			I create electronic music that explores the boundaries between digital and analog sound. 
-			My work spans from ambient compositions to experimental electronic performances, 
-			often incorporating custom-built circuits and software.
+			Guitarist, composer and improviser.
 		</p>
 	</div>
 
 	<section class="gallery">
-		<h2>Performances & Projects</h2>
+		<h2>Projects</h2>
 		<div class="image-grid">
 			<div class="image-item">
-				<img src={albumLaunch} alt="Album launch performance" />
+				<img src={nightShoot} alt="Aubin Vanns Quartet" />
 				<div class="image-caption">
-					<h3>Album Launch</h3>
-					<p>Live performance at the album launch event</p>
-				</div>
-			</div>
-			<div class="image-item">
-				<img src={nightShoot} alt="Night performance setup" />
-				<div class="image-caption">
-					<h3>Night Performance</h3>
+					<h3>Aubin Vanns Quartet</h3>
 					<p>Experimental setup for nocturnal soundscapes</p>
+					<a href="https://aubinvanns.bandcamp.com/album/opera" target="_blank" class="btn">Listen on Bandcamp</a>
 				</div>
 			</div>
 			<div class="image-item">
-				<img src={dsc02791} alt="Studio session" />
+				<img src={dsc03944} alt="They Will Flock in concert" />
 				<div class="image-caption">
-					<h3>Studio Session</h3>
-					<p>Recording and production work</p>
+					<h3>They Will Flock</h3>
+					<p>An eclectic listening experience with a wide tonal palette that oscillates between funk, rock and jazz with a contemporary approach to group improvisation.</p>
+					<a href="https://theywillflock.bandcamp.com/album/the-game" target="_blank" class="btn">Listen on Bandcamp</a>
 				</div>
+			</div>
+			<div class="image-item">
+				<img src={s16a6151} alt="Blue Ejder CD cover" />
+				<div class="image-caption">
+					<h3>Blue Ejder</h3>
+					<p>Multimedia performance combining sound and visuals</p>
+					<a href="https://open.spotify.com/album/4S9RqONH0Vlw9eHpNI26t5" target="_blank" class="btn">Listen on Spotify</a>
+				</div>
+			</div>
+			<div class="image-item">
+				<img src={albumLaunch} alt="Album launch performance" />
 			</div>
 			<div class="image-item">
 				<img src={dsc03934} alt="Live performance" />
-				<div class="image-caption">
-					<h3>Live Performance</h3>
-					<p>Interactive electronic music performance</p>
-				</div>
 			</div>
 			<div class="image-item">
-				<img src={dsc03944} alt="Equipment setup" />
-				<div class="image-caption">
-					<h3>Equipment Setup</h3>
-					<p>Custom gear and circuit integration</p>
-				</div>
-			</div>
-			<div class="image-item">
-				<img src={s16a6151} alt="Performance art" />
-				<div class="image-caption">
-					<h3>Performance Art</h3>
-					<p>Multimedia performance combining sound and visuals</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="music-info">
-		<h2>Current Projects</h2>
-		<div class="project-grid">
-			<div class="project-card">
-				<h3>Electronic Compositions</h3>
-				<p>Original electronic music exploring themes of technology, nature, and human experience. 
-				Available on Bandcamp and streaming platforms.</p>
-				<a href="https://aubinvanns.bandcamp.com/album/opera" target="_blank" class="btn">Listen on Bandcamp</a>
-			</div>
-			<div class="project-card">
-				<h3>Live Performances</h3>
-				<p>Interactive electronic performances featuring custom-built circuits, 
-				software instruments, and real-time sound manipulation.</p>
-			</div>
-			<div class="project-card">
-				<h3>Sound Design</h3>
-				<p>Custom sound design for multimedia projects, installations, 
-				and experimental audio-visual experiences.</p>
+				<img src={dsc02791} alt="Studio session" />
 			</div>
 		</div>
 	</section>
@@ -139,6 +106,8 @@
 		background: var(--color-bg);
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
+		display: grid;
+		grid-template-rows: auto 1fr;
 		overflow: hidden;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
@@ -157,6 +126,8 @@
 
 	.image-caption {
 		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.image-caption h3 {
@@ -166,9 +137,15 @@
 	}
 
 	.image-caption p {
-		margin: 0;
+		margin: 0 0 1rem 0;
 		color: var(--color-text-secondary);
 		line-height: 1.6;
+		flex: 1;
+	}
+
+	.image-caption .btn {
+		align-self: flex-start;
+		margin-top: auto;
 	}
 
 	.music-info {
