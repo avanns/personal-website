@@ -3,103 +3,123 @@
 </script>
 
 <header>
-
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/music') ? 'page' : undefined}>
-				<a href="/music">Music</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/circuits') ? 'page' : undefined}>
-				<a href="/circuits">Circuits</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/coding') ? 'page' : undefined}>
-				<a href="/coding">Coding</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
+		<div class="nav-container">
+			<div class="nav-brand">
+				<a href="/">Aubin Vanns</a>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="/" class={$page.url.pathname === '/' ? 'active' : ''}>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="/music" class={$page.url.pathname.startsWith('/music') ? 'active' : ''}>
+						Music
+					</a>
+				</li>
+				<li>
+					<a href="/circuits" class={$page.url.pathname.startsWith('/circuits') ? 'active' : ''}>
+						Circuits
+					</a>
+				</li>
+				<li>
+					<a href="/coding" class={$page.url.pathname.startsWith('/coding') ? 'active' : ''}>
+						Coding
+					</a>
+				</li>
+				<li>
+					<a href="/contact" class={$page.url.pathname.startsWith('/contact') ? 'active' : ''}>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
-
 </header>
 
 <style>
 	header {
 		grid-area: header;
-		display: flex;
-		justify-content: center;
+		background: var(--color-bg);
+		border-bottom: 1px solid var(--color-border);
+		position: sticky;
+		top: 0;
+		z-index: 100;
 	}
 
 	nav {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.nav-container {
 		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
+		height: var(--header-height);
 	}
 
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
+	.nav-brand a {
+		font-size: 1.25rem;
 		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		color: var(--color-text);
 		text-decoration: none;
-		transition: color 0.2s linear;
 	}
 
-	a:hover {
-		color: var(--color-theme-1);
+	.nav-brand a:hover {
+		color: var(--color-accent);
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		gap: 2rem;
+	}
+
+	.nav-links a {
+		color: var(--color-text-secondary);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.95rem;
+		transition: color 0.2s ease;
+		padding: 0.5rem 0;
+		position: relative;
+	}
+
+	.nav-links a:hover {
+		color: var(--color-text);
+	}
+
+	.nav-links a.active {
+		color: var(--color-accent);
+	}
+
+	.nav-links a.active::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: var(--color-accent);
+		border-radius: 1px;
+	}
+
+	@media (max-width: 768px) {
+		.nav-container {
+			flex-direction: column;
+			height: auto;
+			padding: 1rem 0;
+		}
+
+		.nav-links {
+			margin-top: 1rem;
+			gap: 1rem;
+		}
 	}
 </style>

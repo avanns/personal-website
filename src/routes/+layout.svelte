@@ -24,59 +24,48 @@
 
 <style>
 	.app {
-		display: grid;
-		grid-template-areas: "header header header" ". main ." "footer footer footer";
-		grid-template-columns: 1rem 1fr 1rem;
 		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
 	}
 
 	main {
-		grid-area: main;
 		flex: 1;
-		display: flex;
-		min-height: calc(100vh - var(--header-height) - var(--footer-height));
-		padding: 1rem;
+		padding: 2rem 0;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-		justify-content: center;
-		align-items: center;
 	}
 
 	footer {
-		height: var(--footer-height);
-		box-sizing: border-box;
-		grid-area: footer;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+		background: var(--color-bg-secondary);
+		border-top: 1px solid var(--color-border);
+		padding: 2rem 0;
+		margin-top: auto;
 	}
 
 	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
 		text-align: center;
 	}
 
 	.footer-links {
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 
 	.footer-links a {
-		margin: 0 0.5rem;
-		font-weight: bold;
+		margin: 0 1rem;
+		font-weight: 500;
+		color: var(--color-text-secondary);
+	}
+
+	.footer-links a:hover {
+		color: var(--color-accent);
 	}
 
 	footer p {
 		margin: 0;
 		font-size: 0.9rem;
-		opacity: 0.8;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+		color: var(--color-text-secondary);
 	}
 </style>

@@ -7,143 +7,164 @@
     <meta name="description" content="Musician, Developer & Circuit Designer - Portfolio of Aubin Vanns"/>
 </svelte:head>
 
-<section class="hero">
-	<picture>
-		<img src={banner} alt="Aubin Vanns banner"/>
-	</picture>
-	<div class="hero-content">
-		<h1>Aubin Vanns</h1>
-		<p class="tagline">Musician • Developer • Circuit Designer</p>
-	</div>
-</section>
-
-<section class="intro">
-	<div class="text-column">
-		<h2>Welcome to my portfolio</h2>
-		<p>
-			I'm a multidisciplinary creator working at the intersection of music, technology, and electronics. 
-			From crafting electronic music to building custom circuits and developing software, I explore the 
-			creative possibilities that emerge when these worlds collide.
-		</p>
-		
-		<div class="portfolio-grid">
-			<a href="/music" class="portfolio-card">
-				<h3>Music</h3>
-				<p>Electronic compositions and live performances</p>
-			</a>
-			<a href="/circuits" class="portfolio-card">
-				<h3>Circuits</h3>
-				<p>Custom electronic circuits and audio equipment</p>
-			</a>
-			<a href="/coding" class="portfolio-card">
-				<h3>Coding</h3>
-				<p>Software development and web applications</p>
-			</a>
+<div class="home-page">
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Aubin Vanns</h1>
+			<p class="tagline">Musician • Developer • Circuit Designer</p>
+			<p class="description">
+				I create at the intersection of music, technology, and electronics. 
+				From electronic compositions to custom circuits and software development, 
+				I explore the creative possibilities that emerge when these worlds collide.
+			</p>
 		</div>
-	</div>
-</section>
+		<div class="hero-image">
+			<img src={banner} alt="Aubin Vanns" />
+		</div>
+	</section>
+
+	<section class="work-grid">
+		<a href="/music" class="work-card">
+			<div class="card-content">
+				<h2>Music</h2>
+				<p>Electronic compositions and live performances that push the boundaries of sound and technology.</p>
+				<span class="card-link">Explore Music →</span>
+			</div>
+		</a>
+		
+		<a href="/circuits" class="work-card">
+			<div class="card-content">
+				<h2>Circuits</h2>
+				<p>Custom electronic circuits and audio equipment designed for performance and experimentation.</p>
+				<span class="card-link">View Circuits →</span>
+			</div>
+		</a>
+		
+		<a href="/coding" class="work-card">
+			<div class="card-content">
+				<h2>Coding</h2>
+				<p>Software development that bridges the gap between technology and creative expression.</p>
+				<span class="card-link">See Projects →</span>
+			</div>
+		</a>
+	</section>
+</div>
 
 <style>
+	.home-page {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
 	.hero {
-		position: relative;
-		width: 100%;
-		height: 60vh;
-		overflow: hidden;
-		border-radius: 8px;
-		margin-bottom: 2rem;
-	}
-
-	.hero picture {
-		width: 100%;
-		height: 100%;
-	}
-
-	.hero img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	.hero-content {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-		color: white;
-		padding: 2rem;
-		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		margin: 4rem 0 6rem 0;
+		min-height: 60vh;
 	}
 
 	.hero-content h1 {
-		margin: 0 0 0.5rem 0;
-		font-size: 3rem;
-		font-weight: bold;
+		font-size: 3.5rem;
+		font-weight: 800;
+		margin-bottom: 1rem;
+		line-height: 1.1;
 	}
 
 	.tagline {
-		font-size: 1.2rem;
-		margin: 0;
-		opacity: 0.9;
+		font-size: 1.25rem;
+		color: var(--color-text-secondary);
+		margin-bottom: 2rem;
+		font-weight: 500;
 	}
 
-	.intro {
-		margin-top: 2rem;
+	.description {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: var(--color-text-secondary);
+		max-width: 500px;
 	}
 
-	.intro h2 {
-		text-align: center;
-		margin-bottom: 1.5rem;
-		font-size: 2rem;
+	.hero-image {
+		position: relative;
 	}
 
-	.portfolio-grid {
+	.hero-image img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 12px;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	}
+
+	.work-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 1.5rem;
-		margin-top: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin: 6rem 0;
 	}
 
-	.portfolio-card {
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		border-radius: 8px;
-		padding: 1.5rem;
+	.work-card {
+		background: var(--color-bg);
+		border: 1px solid var(--color-border);
+		border-radius: 12px;
+		padding: 2rem;
 		text-decoration: none;
 		color: inherit;
 		transition: all 0.3s ease;
-		backdrop-filter: blur(10px);
+		position: relative;
+		overflow: hidden;
 	}
 
-	.portfolio-card:hover {
-		background: rgba(255, 255, 255, 0.2);
-		transform: translateY(-2px);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-		text-decoration: none;
+	.work-card:hover {
+		border-color: var(--color-accent);
+		transform: translateY(-4px);
+		box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
 	}
 
-	.portfolio-card h3 {
-		margin: 0 0 0.5rem 0;
-		color: var(--color-theme-1);
-		font-size: 1.3rem;
+	.work-card h2 {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+		color: var(--color-text);
 	}
 
-	.portfolio-card p {
-		margin: 0;
-		opacity: 0.8;
+	.work-card p {
+		color: var(--color-text-secondary);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.card-link {
+		color: var(--color-accent);
+		font-weight: 600;
+		font-size: 0.95rem;
+	}
+
+	.work-card:hover .card-link {
+		color: var(--color-accent-hover);
 	}
 
 	@media (max-width: 768px) {
-		.hero-content h1 {
-			font-size: 2rem;
-		}
-		
-		.tagline {
-			font-size: 1rem;
-		}
-		
-		.portfolio-grid {
+		.hero {
 			grid-template-columns: 1fr;
+			gap: 2rem;
+			margin: 2rem 0 4rem 0;
+		}
+
+		.hero-content h1 {
+			font-size: 2.5rem;
+		}
+
+		.work-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.work-card {
+			padding: 1.5rem;
 		}
 	}
 </style>
