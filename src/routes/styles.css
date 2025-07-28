@@ -1,28 +1,30 @@
 @import '@fontsource/fira-mono';
+@import '@fontsource/inter';
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	--font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	
-	/* Modern minimalist color palette */
+	/* Swiss/International Style color palette */
 	--color-bg: #ffffff;
-	--color-bg-secondary: #f8f9fa;
-	--color-text: #1a1a1a;
-	--color-text-secondary: #6b7280;
-	--color-accent: #3b82f6;
-	--color-accent-hover: #2563eb;
-	--color-border: #e5e7eb;
-	--color-border-hover: #d1d5db;
+	--color-bg-secondary: #f8f8f8;
+	--color-text: #000000;
+	--color-text-secondary: #333333;
+	--color-accent: #000000;
+	--color-accent-hover: #333333;
+	--color-border: #000000;
+	--color-border-light: #e0e0e0;
 	
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
-	--header-height: 64px;
-	--footer-height: 80px;
+	--header-height: 80px;
+	--footer-height: 100px;
 	
 	font-family: var(--font-body);
 	color: var(--color-text);
-	line-height: 1.6;
+	line-height: 1.5;
+	font-weight: 400;
 }
 
 body {
@@ -32,6 +34,7 @@ body {
 	color: var(--color-text);
 	font-size: 16px;
 	font-weight: 400;
+	letter-spacing: -0.01em;
 }
 
 h1,
@@ -40,33 +43,42 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 600;
-	line-height: 1.3;
+	font-weight: 700;
+	line-height: 1.2;
 	margin: 0 0 1rem 0;
+	letter-spacing: -0.02em;
 }
 
 h1 {
-	font-size: 2.5rem;
-	font-weight: 700;
+	font-size: 3rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.03em;
 }
 
 h2 {
 	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
 }
 
 h3 {
 	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 p {
 	margin: 0 0 1rem 0;
-	line-height: 1.7;
+	line-height: 1.6;
+	font-weight: 400;
 }
 
 a {
-	color: var(--color-accent);
+	color: var(--color-text);
 	text-decoration: none;
 	transition: color 0.2s ease;
+	font-weight: 500;
 }
 
 a:hover {
@@ -79,7 +91,6 @@ pre {
 	font-family: var(--font-mono);
 	background-color: var(--color-bg-secondary);
 	border: 1px solid var(--color-border);
-	border-radius: 6px;
 	padding: 1rem;
 	overflow-x: auto;
 	color: var(--color-text);
@@ -106,7 +117,7 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 720px) {
 	h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 }
 

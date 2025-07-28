@@ -6,32 +6,32 @@
 	<nav>
 		<div class="nav-container">
 			<div class="nav-brand">
-				<a href="/">Aubin Vanns</a>
+				<a href="/">AUBIN VANNS</a>
 			</div>
 			<ul class="nav-links">
 				<li>
 					<a href="/" class={$page.url.pathname === '/' ? 'active' : ''}>
-						Home
+						HOME
 					</a>
 				</li>
 				<li>
 					<a href="/music" class={$page.url.pathname.startsWith('/music') ? 'active' : ''}>
-						Music
+						MUSIC
 					</a>
 				</li>
 				<li>
 					<a href="/circuits" class={$page.url.pathname.startsWith('/circuits') ? 'active' : ''}>
-						Circuits
+						CIRCUITS
 					</a>
 				</li>
 				<li>
 					<a href="/coding" class={$page.url.pathname.startsWith('/coding') ? 'active' : ''}>
-						Coding
+						CODING
 					</a>
 				</li>
 				<li>
 					<a href="/contact" class={$page.url.pathname.startsWith('/contact') ? 'active' : ''}>
-						Contact
+						CONTACT
 					</a>
 				</li>
 			</ul>
@@ -43,7 +43,7 @@
 	header {
 		grid-area: header;
 		background: var(--color-bg);
-		border-bottom: 1px solid var(--color-border);
+		border-bottom: 2px solid var(--color-border);
 		position: sticky;
 		top: 0;
 		z-index: 100;
@@ -52,7 +52,7 @@
 	nav {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 0 2rem;
 	}
 
 	.nav-container {
@@ -64,13 +64,15 @@
 
 	.nav-brand a {
 		font-size: 1.25rem;
-		font-weight: 700;
+		font-weight: 900;
 		color: var(--color-text);
 		text-decoration: none;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
 	}
 
 	.nav-brand a:hover {
-		color: var(--color-accent);
+		color: var(--color-accent-hover);
 	}
 
 	.nav-links {
@@ -78,25 +80,28 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		gap: 2rem;
+		gap: 3rem;
 	}
 
 	.nav-links a {
-		color: var(--color-text-secondary);
+		color: var(--color-text);
 		text-decoration: none;
-		font-weight: 500;
-		font-size: 0.95rem;
+		font-weight: 600;
+		font-size: 0.9rem;
 		transition: color 0.2s ease;
 		padding: 0.5rem 0;
 		position: relative;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
 	}
 
 	.nav-links a:hover {
-		color: var(--color-text);
+		color: var(--color-accent-hover);
 	}
 
 	.nav-links a.active {
 		color: var(--color-accent);
+		font-weight: 700;
 	}
 
 	.nav-links a.active::after {
@@ -106,8 +111,7 @@
 		left: 0;
 		right: 0;
 		height: 2px;
-		background: var(--color-accent);
-		border-radius: 1px;
+		background: var(--color-border);
 	}
 
 	@media (max-width: 768px) {
@@ -119,7 +123,7 @@
 
 		.nav-links {
 			margin-top: 1rem;
-			gap: 1rem;
+			gap: 2rem;
 		}
 	}
 </style>

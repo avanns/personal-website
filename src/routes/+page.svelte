@@ -10,8 +10,8 @@
 <div class="home-page">
 	<section class="hero">
 		<div class="hero-content">
-			<h1>Aubin Vanns</h1>
-			<p class="tagline">Musician • Developer • Circuit Designer</p>
+			<h1>AUBIN VANNS</h1>
+			<p class="tagline">MUSICIAN • DEVELOPER • CIRCUIT DESIGNER</p>
 			<p class="description">
 				I create at the intersection of music, technology, and electronics. 
 				From electronic compositions to custom circuits and software development, 
@@ -26,25 +26,25 @@
 	<section class="work-grid">
 		<a href="/music" class="work-card">
 			<div class="card-content">
-				<h2>Music</h2>
+				<h2>MUSIC</h2>
 				<p>Electronic compositions and live performances that push the boundaries of sound and technology.</p>
-				<span class="card-link">Explore Music →</span>
+				<span class="card-link">EXPLORE MUSIC →</span>
 			</div>
 		</a>
 		
 		<a href="/circuits" class="work-card">
 			<div class="card-content">
-				<h2>Circuits</h2>
+				<h2>CIRCUITS</h2>
 				<p>Custom electronic circuits and audio equipment designed for performance and experimentation.</p>
-				<span class="card-link">View Circuits →</span>
+				<span class="card-link">VIEW CIRCUITS →</span>
 			</div>
 		</a>
 		
 		<a href="/coding" class="work-card">
 			<div class="card-content">
-				<h2>Coding</h2>
+				<h2>CODING</h2>
 				<p>Software development that bridges the gap between technology and creative expression.</p>
-				<span class="card-link">See Projects →</span>
+				<span class="card-link">SEE PROJECTS →</span>
 			</div>
 		</a>
 	</section>
@@ -55,7 +55,7 @@
 		width: 100%;
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 0 2rem;
 	}
 
 	.hero {
@@ -68,24 +68,29 @@
 	}
 
 	.hero-content h1 {
-		font-size: 3.5rem;
-		font-weight: 800;
+		font-size: 4rem;
+		font-weight: 900;
 		margin-bottom: 1rem;
-		line-height: 1.1;
+		line-height: 1;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
 	}
 
 	.tagline {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		color: var(--color-text-secondary);
 		margin-bottom: 2rem;
-		font-weight: 500;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
 	}
 
 	.description {
 		font-size: 1.1rem;
-		line-height: 1.7;
+		line-height: 1.6;
 		color: var(--color-text-secondary);
 		max-width: 500px;
+		font-weight: 400;
 	}
 
 	.hero-image {
@@ -96,8 +101,7 @@
 		width: 100%;
 		height: 400px;
 		object-fit: cover;
-		border-radius: 12px;
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		border: 2px solid var(--color-border);
 	}
 
 	.work-grid {
@@ -109,8 +113,7 @@
 
 	.work-card {
 		background: var(--color-bg);
-		border: 1px solid var(--color-border);
-		border-radius: 12px;
+		border: 2px solid var(--color-border);
 		padding: 2rem;
 		text-decoration: none;
 		color: inherit;
@@ -120,27 +123,32 @@
 	}
 
 	.work-card:hover {
-		border-color: var(--color-accent);
+		background: var(--color-bg-secondary);
 		transform: translateY(-4px);
-		box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
 	}
 
 	.work-card h2 {
-		font-size: 1.75rem;
-		margin-bottom: 1rem;
+		margin: 0 0 1rem 0;
 		color: var(--color-text);
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
 	}
 
 	.work-card p {
-		color: var(--color-text-secondary);
-		margin-bottom: 1.5rem;
+		margin: 0 0 1.5rem 0;
 		line-height: 1.6;
+		color: var(--color-text-secondary);
+		font-weight: 400;
 	}
 
 	.card-link {
-		color: var(--color-accent);
-		font-weight: 600;
-		font-size: 0.95rem;
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 0.9rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
 	}
 
 	.work-card:hover .card-link {

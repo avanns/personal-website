@@ -13,11 +13,11 @@
 	<footer>
 		<div class="footer-content">
 			<div class="footer-links">
-				<a href="https://aubinvanns.bandcamp.com" target="_blank">Bandcamp</a>
-				<a href="https://github.com/yourusername" target="_blank">GitHub</a>
-				<a href="/contact">Contact</a>
+				<a href="https://aubinvanns.bandcamp.com" target="_blank">BANDCAMP</a>
+				<a href="https://github.com/yourusername" target="_blank">GITHUB</a>
+				<a href="/contact">CONTACT</a>
 			</div>
-			<p>&copy; 2024 Aubin Vanns. All rights reserved.</p>
+			<p>&copy; 2024 AUBIN VANNS. ALL RIGHTS RESERVED.</p>
 		</div>
 	</footer>
 </div>
@@ -37,7 +37,7 @@
 
 	footer {
 		background: var(--color-bg-secondary);
-		border-top: 1px solid var(--color-border);
+		border-top: 2px solid var(--color-border);
 		padding: 2rem 0;
 		margin-top: auto;
 	}
@@ -45,7 +45,7 @@
 	.footer-content {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 0 2rem;
 		text-align: center;
 	}
 
@@ -55,17 +55,23 @@
 
 	.footer-links a {
 		margin: 0 1rem;
-		font-weight: 500;
-		color: var(--color-text-secondary);
+		font-weight: 600;
+		color: var(--color-text);
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-size: 0.9rem;
 	}
 
 	.footer-links a:hover {
-		color: var(--color-accent);
+		color: var(--color-accent-hover);
 	}
 
 	footer p {
 		margin: 0;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		color: var(--color-text-secondary);
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
 	}
 </style>
