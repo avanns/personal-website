@@ -106,15 +106,14 @@
 		background: var(--color-bg);
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
-		display: grid;
-		grid-template-rows: auto 1fr;
 		overflow: hidden;
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 	}
 
 	.image-item:hover {
 		transform: translateY(-4px);
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		border-color: var(--color-accent);
 	}
 
 	.image-item img {
@@ -128,12 +127,15 @@
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
+		height: 100%;
+		transition: background-color 0.3s ease;
 	}
 
 	.image-caption h3 {
 		margin: 0 0 0.5rem 0;
 		color: var(--color-text);
 		font-size: 1.25rem;
+		transition: color 0.3s ease;
 	}
 
 	.image-caption p {
@@ -141,11 +143,13 @@
 		color: var(--color-text-secondary);
 		line-height: 1.6;
 		flex: 1;
+		transition: color 0.3s ease;
 	}
 
 	.image-caption .btn {
 		align-self: flex-start;
 		margin-top: auto;
+		transition: background-color 0.3s ease, color 0.3s ease;
 	}
 
 	.music-info {
@@ -169,34 +173,37 @@
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
 		padding: 2rem;
-		transition: border-color 0.3s ease;
+		transition: border-color 0.3s ease, background-color 0.3s ease;
 	}
 
 	.project-card:hover {
 		border-color: var(--color-accent);
+		background: var(--color-bg-secondary);
 	}
 
 	.project-card h3 {
 		margin: 0 0 1rem 0;
 		color: var(--color-text);
 		font-size: 1.25rem;
+		transition: color 0.3s ease;
 	}
 
 	.project-card p {
 		margin: 0 0 1.5rem 0;
 		line-height: 1.6;
 		color: var(--color-text-secondary);
+		transition: color 0.3s ease;
 	}
 
 	.btn {
 		display: inline-block;
 		background: var(--color-accent);
-		color: white;
+		color: var(--color-bg);
 		padding: 0.75rem 1.5rem;
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 600;
-		transition: background 0.3s ease;
+		transition: background 0.3s ease, color 0.3s ease;
 	}
 
 	.btn:hover {

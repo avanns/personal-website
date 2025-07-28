@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import ThemeToggle from '$lib/ThemeToggle.svelte';
 </script>
 
 <header>
@@ -34,6 +35,9 @@
 						CONTACT
 					</a>
 				</li>
+				<li class="theme-toggle-container">
+					<ThemeToggle />
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -47,6 +51,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 100;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
 	}
 
 	nav {
@@ -69,6 +74,7 @@
 		text-decoration: none;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
+		transition: color 0.3s ease;
 	}
 
 	.nav-brand a:hover {
@@ -81,6 +87,7 @@
 		margin: 0;
 		padding: 0;
 		gap: 3rem;
+		align-items: center;
 	}
 
 	.nav-links a {
@@ -112,6 +119,12 @@
 		right: 0;
 		height: 2px;
 		background: var(--color-border);
+		transition: background-color 0.3s ease;
+	}
+
+	.theme-toggle-container {
+		display: flex;
+		align-items: center;
 	}
 
 	@media (max-width: 768px) {

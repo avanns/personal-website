@@ -6,7 +6,7 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	
-	/* Swiss/International Style color palette */
+	/* Light theme (default) */
 	--color-bg: #ffffff;
 	--color-bg-secondary: #f8f8f8;
 	--color-text: #000000;
@@ -27,6 +27,18 @@
 	font-weight: 400;
 }
 
+[data-theme="dark"] {
+	/* Dark theme */
+	--color-bg: #000000;
+	--color-bg-secondary: #111111;
+	--color-text: #ffffff;
+	--color-text-secondary: #cccccc;
+	--color-accent: #ffffff;
+	--color-accent-hover: #cccccc;
+	--color-border: #ffffff;
+	--color-border-light: #333333;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -35,6 +47,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -0.01em;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
