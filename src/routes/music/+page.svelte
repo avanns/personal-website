@@ -106,6 +106,8 @@
 		background: var(--color-bg);
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
+		display: grid;
+		grid-template-rows: auto 1fr;
 		overflow: hidden;
 		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 	}
@@ -127,7 +129,6 @@
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
-		height: 100%;
 		transition: background-color 0.3s ease;
 	}
 
