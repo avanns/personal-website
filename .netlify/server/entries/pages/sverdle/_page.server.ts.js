@@ -1,4 +1,4 @@
-import { f as fail } from "../../../chunks/index.js";
+import { fail } from "@sveltejs/kit";
 const words = [
   "aback",
   "abase",
@@ -13004,8 +13004,7 @@ class Game {
   enter(letters) {
     const word = letters.join("");
     const valid = allowed.has(word);
-    if (!valid)
-      return false;
+    if (!valid) return false;
     this.guesses[this.answers.length] = word;
     const available = Array.from(this.answer);
     const answer = Array(5).fill("_");

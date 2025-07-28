@@ -11,7 +11,14 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://aubinvanns.bandcamp.com/album/opera" target="_blank">Bandcamp</a> to hear/buy the music.</p>
+		<div class="footer-content">
+			<div class="footer-links">
+				<a href="https://aubinvanns.bandcamp.com" target="_blank">Bandcamp</a>
+				<a href="https://github.com/yourusername" target="_blank">GitHub</a>
+				<a href="/contact">Contact</a>
+			</div>
+			<p>&copy; 2024 Aubin Vanns. All rights reserved.</p>
+		</div>
 	</footer>
 </div>
 
@@ -48,8 +55,23 @@
 		padding: 12px;
 	}
 
-	footer a {
+	.footer-content {
+		text-align: center;
+	}
+
+	.footer-links {
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-links a {
+		margin: 0 0.5rem;
 		font-weight: bold;
+	}
+
+	footer p {
+		margin: 0;
+		font-size: 0.9rem;
+		opacity: 0.8;
 	}
 
 	@media (min-width: 480px) {
