@@ -51,7 +51,7 @@
 				<img src={s16a6151} alt="Blue Ejder CD cover" />
 				<div class="image-caption">
 					<h3>Blue Ejder</h3>
-					<p>Multimedia performance combining sound and visuals</p>
+					<p>Jazz & Swedish folk music - words by Karin Boye</p>
 					<a
 						href="https://open.spotify.com/album/4S9RqONH0Vlw9eHpNI26t5"
 						target="_blank"
