@@ -36,6 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^5.2.6",
-		"nodemailer": "^7.0.5"
+		"nodemailer": "^7.0.5",
+		"resend": "^4.7.0"
 	}
 }

@@ -1,19 +1,14 @@
 import type { Actions } from '@sveltejs/kit';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
-// Email configuration - you'll need to set these environment variables
-const EMAIL_CONFIG = {
-	host: 'smtp.gmail.com',
-	port: 587,
-	secure: false, // true for 465, false for other ports
-	auth: {
-		user: process.env.EMAIL_USER, // your Gmail address
-		pass: process.env.EMAIL_PASS  // your Gmail app password
-	}
-};
+// Initialize Resend with your API key
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Your email address where you want to receive contact form messages
 const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL || 'your-email@example.com';
+
+// Optional custom from email (if you have a custom domain configured in Resend)
+const FROM_EMAIL = process.env.FROM_EMAIL || 'Portfolio Contact Form <noreply@yourdomain.com>';
 
 export const actions: Actions = {
 	default: async ({ request }) => {
@@ -41,9 +36,6 @@ export const actions: Actions = {
 				};
 			}
 
-			// Create transporter
-			const transporter = nodemailer.createTransporter(EMAIL_CONFIG);
-
 			// Email content
 			const subjectMap: Record<string, string> = {
 				music: 'Music Collaboration',
@@ -68,10 +60,10 @@ export const actions: Actions = {
 				Sent from your portfolio contact form
 			`;
 
-			// Send email
-			await transporter.sendMail({
-				from: EMAIL_CONFIG.auth.user,
-				to: RECIPIENT_EMAIL,
+			// Send email using Resend
+			await resend.emails.send({
+				from: FROM_EMAIL,
+				to: [RECIPIENT_EMAIL],
 				subject: emailSubject,
 				text: emailContent,
 				replyTo: email // This allows you to reply directly to the sender
