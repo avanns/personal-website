@@ -24,6 +24,11 @@
 			<h3>Message Sent!</h3>
 			<p>{form.message}</p>
 		</div>
+	{:else if form?.success === false}
+		<div class="error-message">
+			<h3>Error</h3>
+			<p>{form.message}</p>
+		</div>
 	{/if}
 
 	<div class="contact-content">
@@ -102,6 +107,25 @@
 	}
 
 	.success-message p {
+		margin: 0;
+		color: var(--color-text-secondary);
+	}
+
+	.error-message {
+		background: rgba(244, 67, 54, 0.1);
+		border: 1px solid rgba(244, 67, 54, 0.3);
+		border-radius: 12px;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	.error-message h3 {
+		margin: 0 0 0.5rem 0;
+		color: #f44336;
+	}
+
+	.error-message p {
 		margin: 0;
 		color: var(--color-text-secondary);
 	}

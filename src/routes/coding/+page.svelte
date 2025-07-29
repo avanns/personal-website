@@ -70,51 +70,38 @@
 		<div class="project-grid">
 			<div class="project-card">
 				<div class="project-header">
-					<img src={svelteLogo} alt="Svelte" class="tech-icon" />
-					<h3>Portfolio Website</h3>
+					<h3>3rd Party Clothing Rental Widget</h3>
 				</div>
-				<p>A modern portfolio built with SvelteKit, featuring responsive design and smooth animations.</p>
+				<p>Custom rental widget solution used by major fashion brands including Finisterre, French Connection, and Oh Polly. Built with React and TypeScript for seamless integration across different Shopify stores.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/portfolio" target="_blank" class="github-link">
-						<img src={githubIcon} alt="GitHub" />
-						View Code
-					</a>
+					<span class="project-status">Live in Production</span>
 				</div>
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>E-commerce Platform</h3>
+					<h3>UI Component Library</h3>
 				</div>
-				<p>Custom Shopify theme with advanced features, custom app integrations, and optimized performance for high-traffic stores.</p>
+				<p>Shared component library built with React and TypeScript for consistent design patterns across multiple projects. Includes comprehensive documentation and testing suite.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/shopify-theme" target="_blank" class="github-link">
-						<img src={githubIcon} alt="GitHub" />
-						View Code
-					</a>
+					<span class="project-status">Internal Tool</span>
 				</div>
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>Shopify App</h3>
+					<h3>Back in Stock App</h3>
 				</div>
-				<p>Custom Shopify app built with React, TypeScript, and Laravel backend for inventory management and analytics.</p>
+				<p>Full-stack Shopify app for managing back-in-stock notifications. Features customer notification system, inventory tracking, and admin dashboard built with React frontend and Laravel backend.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/shopify-app" target="_blank" class="github-link">
-						<img src={githubIcon} alt="GitHub" />
-						View Code
-					</a>
+					<span class="project-status">Live in Production</span>
 				</div>
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>Infrastructure as Code</h3>
+					<h3>Custom Rental App Solution</h3>
 				</div>
-				<p>Terraform configurations for AWS infrastructure, including auto-scaling, load balancing, and CI/CD pipelines.</p>
+				<p>Comprehensive rental management system for Shopify stores. Includes inventory management, booking system, and customer portal with advanced rental period handling.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/terraform-aws" target="_blank" class="github-link">
-						<img src={githubIcon} alt="GitHub" />
-						View Code
-					</a>
+					<span class="project-status">Live in Production</span>
 				</div>
 			</div>
 		</div>
@@ -294,6 +281,18 @@
 	.github-link:hover {
 		color: var(--color-accent-hover);
 		text-decoration: none;
+	}
+
+	.project-status {
+		display: inline-block;
+		background: var(--color-accent);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 4px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
 	}
 
 	.approach {
