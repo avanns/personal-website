@@ -11,11 +11,11 @@
 	<section class="hero">
 		<div class="hero-content">
 			<h1>AUBIN VANNS</h1>
-			<p class="tagline">MUSICIAN • DEVELOPER • CIRCUIT DESIGNER</p>
+			<p class="tagline">MUSICIAN • DEVELOPER • PEDAL BUILDER</p>
 			<p class="description">
-				I create at the intersection of music, technology, and electronics. 
-				From electronic compositions to custom circuits and software development, 
-				I explore the creative possibilities that emerge when these worlds collide.
+				I write code, make music, and build circuits. 
+				Sometimes I combine all three. 
+				Here's what I've been working on.
 			</p>
 		</div>
 		<div class="hero-image">
@@ -24,27 +24,27 @@
 	</section>
 
 	<section class="work-grid">
-		<a href="/music" class="work-card">
-			<div class="card-content">
-				<h2>MUSIC</h2>
-				<p>Electronic compositions and live performances that push the boundaries of sound and technology.</p>
-				<span class="card-link">EXPLORE MUSIC →</span>
-			</div>
-		</a>
-		
-		<a href="/circuits" class="work-card">
-			<div class="card-content">
-				<h2>CIRCUITS</h2>
-				<p>Custom electronic circuits and audio equipment designed for performance and experimentation.</p>
-				<span class="card-link">VIEW CIRCUITS →</span>
-			</div>
-		</a>
-		
 		<a href="/coding" class="work-card">
 			<div class="card-content">
 				<h2>CODING</h2>
-				<p>Software development that bridges the gap between technology and creative expression.</p>
+				<p>Software development, full-stack but with a focus on front end, React & Typescript.</p>
 				<span class="card-link">SEE PROJECTS →</span>
+			</div>
+		</a>
+
+		<a href="/music" class="work-card">
+			<div class="card-content">
+				<h2>MUSIC</h2>
+				<p>Jazz guitarist & composer. Solo & group projects.</p>
+				<span class="card-link">EXPLORE MUSIC →</span>
+			</div>
+		</a>
+
+		<a href="/circuits" class="work-card">
+			<div class="card-content">
+				<h2>PEDALS</h2>
+				<p>Custom electronic circuits and effects pedals designed for personal use.</p>
+				<span class="card-link">VIEW PEDALS →</span>
 			</div>
 		</a>
 	</section>
@@ -52,7 +52,6 @@
 
 <style>
 	.home-page {
-		width: 100%;
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 2rem;

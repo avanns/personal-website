@@ -47,15 +47,6 @@
 					<a href="https://open.spotify.com/album/4S9RqONH0Vlw9eHpNI26t5" target="_blank" class="btn">Listen on Spotify</a>
 				</div>
 			</div>
-			<div class="image-item">
-				<img src={albumLaunch} alt="Album launch performance" />
-			</div>
-			<div class="image-item">
-				<img src={dsc03934} alt="Live performance" />
-			</div>
-			<div class="image-item">
-				<img src={dsc02791} alt="Studio session" />
-			</div>
 		</div>
 	</section>
 </div>

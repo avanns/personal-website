@@ -14,7 +14,6 @@
 		<div class="footer-content">
 			<div class="footer-links">
 				<a href="https://aubinvanns.bandcamp.com" target="_blank">BANDCAMP</a>
-				<a href="https://github.com/yourusername" target="_blank">GITHUB</a>
 				<a href="/contact">CONTACT</a>
 			</div>
 			<p>&copy; 2024 AUBIN VANNS. ALL RIGHTS RESERVED.</p>

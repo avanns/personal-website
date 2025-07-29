@@ -128,6 +128,10 @@
 	}
 
 	@media (max-width: 768px) {
+		nav {
+			padding: 0 1rem;
+		}
+
 		.nav-container {
 			flex-direction: column;
 			height: auto;
@@ -136,7 +140,37 @@
 
 		.nav-links {
 			margin-top: 1rem;
-			gap: 2rem;
+			gap: 1.5rem;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+		}
+
+		.nav-links li {
+			flex-shrink: 0;
+		}
+
+		.nav-links a {
+			font-size: 0.8rem;
+			padding: 0.25rem 0.5rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		nav {
+			padding: 0 0.5rem;
+		}
+
+		.nav-links {
+			gap: 1rem;
+		}
+
+		.nav-links a {
+			font-size: 0.75rem;
+		}
+
+		.nav-brand a {
+			font-size: 1rem;
 		}
 	}
 </style>
