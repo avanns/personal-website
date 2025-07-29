@@ -6,21 +6,23 @@
 </script>
 
 <svelte:head>
-    <title>Circuits - Aubin Vanns</title>
-    <meta name="description" content="Custom electronic circuits and audio equipment by Aubin Vanns" />
+	<title>Circuits - Aubin Vanns</title>
+	<meta
+		name="description"
+		content="Custom electronic circuits and audio equipment by Aubin Vanns"
+	/>
 </svelte:head>
 
 <div class="circuits-page">
 	<div class="page-header">
 		<h1>Circuits</h1>
 		<p class="intro">
-			I design and build custom guitar effects pedals for personal use, focusing on 
-			distortion and overdrive circuits. Each pedal has custom designed circuit boards will hand-selected components.
+			I design and build custom guitar effects pedals for personal use, focusing on distortion and
+			overdrive circuits. Each pedal has custom designed circuit boards will hand-selected
+			components.
 		</p>
 		<br />
-		<p class="intro">
-		I've also fixed and modified a number of pedals.
-		</p>
+		<p class="intro">I've also fixed and modified a number of pedals.</p>
 	</div>
 
 	<section class="pedal-gallery">
@@ -30,7 +32,9 @@
 				<img src={pedal1} alt="Custom effects pedal" />
 				<div class="pedal-info">
 					<h3>Fuzz Pedal</h3>
-					<p>Based on the Depth Charge fuzz pedal. With controls for gain, blend, tone and volume</p>
+					<p>
+						Based on the Depth Charge fuzz pedal. With controls for gain, blend, tone and volume
+					</p>
 				</div>
 			</div>
 			<div class="pedal-item">
@@ -98,7 +102,9 @@
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
 		overflow: hidden;
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.pedal-item:hover {
@@ -218,13 +224,13 @@
 		.pedal-grid {
 			grid-template-columns: 1fr;
 		}
-		
+
 		.info-grid {
 			grid-template-columns: 1fr;
 		}
-		
+
 		.services-grid {
 			grid-template-columns: 1fr;
 		}
 	}
-</style> 
+</style>

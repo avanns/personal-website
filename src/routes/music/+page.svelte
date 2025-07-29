@@ -8,16 +8,17 @@
 </script>
 
 <svelte:head>
-    <title>Music - Aubin Vanns</title>
-    <meta name="description" content="Electronic music compositions and performances by Aubin Vanns" />
+	<title>Music - Aubin Vanns</title>
+	<meta
+		name="description"
+		content="Electronic music compositions and performances by Aubin Vanns"
+	/>
 </svelte:head>
 
 <div class="music-page">
 	<div class="page-header">
 		<h1>Music</h1>
-		<p class="intro">
-			Guitarist, composer and improviser.
-		</p>
+		<p class="intro">Guitarist, composer and improviser.</p>
 	</div>
 
 	<section class="gallery">
@@ -28,15 +29,22 @@
 				<div class="image-caption">
 					<h3>Aubin Vanns Quartet</h3>
 					<p>Experimental setup for nocturnal soundscapes</p>
-					<a href="https://aubinvanns.bandcamp.com/album/opera" target="_blank" class="btn">Listen on Bandcamp</a>
+					<a href="https://aubinvanns.bandcamp.com/album/opera" target="_blank" class="btn"
+						>Listen on Bandcamp</a
+					>
 				</div>
 			</div>
 			<div class="image-item">
 				<img src={dsc03944} alt="They Will Flock in concert" />
 				<div class="image-caption">
 					<h3>They Will Flock</h3>
-					<p>An eclectic listening experience with a wide tonal palette that oscillates between funk, rock and jazz with a contemporary approach to group improvisation.</p>
-					<a href="https://theywillflock.bandcamp.com/album/the-game" target="_blank" class="btn">Listen on Bandcamp</a>
+					<p>
+						An eclectic listening experience with a wide tonal palette that oscillates between funk,
+						rock and jazz with a contemporary approach to group improvisation.
+					</p>
+					<a href="https://theywillflock.bandcamp.com/album/the-game" target="_blank" class="btn"
+						>Listen on Bandcamp</a
+					>
 				</div>
 			</div>
 			<div class="image-item">
@@ -44,7 +52,11 @@
 				<div class="image-caption">
 					<h3>Blue Ejder</h3>
 					<p>Multimedia performance combining sound and visuals</p>
-					<a href="https://open.spotify.com/album/4S9RqONH0Vlw9eHpNI26t5" target="_blank" class="btn">Listen on Spotify</a>
+					<a
+						href="https://open.spotify.com/album/4S9RqONH0Vlw9eHpNI26t5"
+						target="_blank"
+						class="btn">Listen on Spotify</a
+					>
 				</div>
 			</div>
 		</div>
@@ -100,7 +112,11 @@
 		display: grid;
 		grid-template-rows: auto 1fr;
 		overflow: hidden;
-		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease,
+			border-color 0.3s ease,
+			background-color 0.3s ease;
 	}
 
 	.image-item:hover {
@@ -141,7 +157,9 @@
 	.image-caption .btn {
 		align-self: flex-start;
 		margin-top: auto;
-		transition: background-color 0.3s ease, color 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
 	}
 
 	.music-info {
@@ -165,7 +183,9 @@
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
 		padding: 2rem;
-		transition: border-color 0.3s ease, background-color 0.3s ease;
+		transition:
+			border-color 0.3s ease,
+			background-color 0.3s ease;
 	}
 
 	.project-card:hover {
@@ -195,7 +215,9 @@
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 600;
-		transition: background 0.3s ease, color 0.3s ease;
+		transition:
+			background 0.3s ease,
+			color 0.3s ease;
 	}
 
 	.btn:hover {
@@ -211,7 +233,7 @@
 		.image-grid {
 			grid-template-columns: 1fr;
 		}
-		
+
 		.project-grid {
 			grid-template-columns: 1fr;
 		}

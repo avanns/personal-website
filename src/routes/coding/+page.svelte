@@ -4,17 +4,17 @@
 </script>
 
 <svelte:head>
-    <title>Coding - Aubin Vanns</title>
-    <meta name="description" content="Software development and web applications by Aubin Vanns" />
+	<title>Coding - Aubin Vanns</title>
+	<meta name="description" content="Software development and web applications by Aubin Vanns" />
 </svelte:head>
 
 <div class="coding-page">
 	<div class="page-header">
 		<h1>Coding</h1>
 		<p class="intro">
-			I specialize in frontend development with extensive experience in React, TypeScript, and the Shopify ecosystem. 
-			From custom e-commerce solutions to scalable web applications, I create robust, 
-			user-centered experiences that drive business growth.
+			I specialize in frontend development with extensive experience in React, TypeScript, and the
+			Shopify ecosystem. From custom e-commerce solutions to scalable web applications, I create
+			robust, user-centered experiences that drive business growth.
 		</p>
 	</div>
 
@@ -72,7 +72,11 @@
 				<div class="project-header">
 					<h3>3rd Party Clothing Rental Widget</h3>
 				</div>
-				<p>Custom rental widget solution used by major fashion brands including Finisterre, French Connection, and Oh Polly. Built with React and TypeScript for seamless integration across different Shopify stores.</p>
+				<p>
+					Custom rental widget solution used by major fashion brands including Finisterre, French
+					Connection, and Oh Polly. Built with React and TypeScript for seamless integration across
+					different Shopify stores.
+				</p>
 				<div class="project-links">
 					<span class="project-status">Live in Production</span>
 				</div>
@@ -81,7 +85,10 @@
 				<div class="project-header">
 					<h3>UI Component Library</h3>
 				</div>
-				<p>Shared component library built with React and TypeScript for consistent design patterns across multiple projects. Includes comprehensive documentation and testing suite.</p>
+				<p>
+					Shared component library built with React and TypeScript for consistent design patterns
+					across multiple projects. Includes comprehensive documentation and testing suite.
+				</p>
 				<div class="project-links">
 					<span class="project-status">Internal Tool</span>
 				</div>
@@ -90,7 +97,11 @@
 				<div class="project-header">
 					<h3>Back in Stock App</h3>
 				</div>
-				<p>Full-stack Shopify app for managing back-in-stock notifications. Features customer notification system, inventory tracking, and admin dashboard built with React frontend and Laravel backend.</p>
+				<p>
+					Full-stack Shopify app for managing back-in-stock notifications. Features customer
+					notification system, inventory tracking, and admin dashboard built with React frontend and
+					Laravel backend.
+				</p>
 				<div class="project-links">
 					<span class="project-status">Live in Production</span>
 				</div>
@@ -99,7 +110,10 @@
 				<div class="project-header">
 					<h3>Custom Rental App Solution</h3>
 				</div>
-				<p>Comprehensive rental management system for Shopify stores. Includes inventory management, booking system, and customer portal with advanced rental period handling.</p>
+				<p>
+					Comprehensive rental management system for Shopify stores. Includes inventory management,
+					booking system, and customer portal with advanced rental period handling.
+				</p>
 				<div class="project-links">
 					<span class="project-status">Live in Production</span>
 				</div>
@@ -112,23 +126,34 @@
 		<div class="approach-grid">
 			<div class="approach-card">
 				<h3>Type-Safe Development</h3>
-				<p>Leveraging TypeScript and Zod for robust, maintainable code with excellent developer experience.</p>
+				<p>
+					Leveraging TypeScript and Zod for robust, maintainable code with excellent developer
+					experience.
+				</p>
 			</div>
 			<div class="approach-card">
 				<h3>E-commerce Excellence</h3>
-				<p>Deep Shopify expertise from theme customization to custom app development and API integrations.</p>
+				<p>
+					Deep Shopify expertise from theme customization to custom app development and API
+					integrations.
+				</p>
 			</div>
 			<div class="approach-card">
 				<h3>Scalable Architecture</h3>
-				<p>Building with AWS, Terraform, and modern DevOps practices for reliable, scalable solutions.</p>
+				<p>
+					Building with AWS, Terraform, and modern DevOps practices for reliable, scalable
+					solutions.
+				</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="contact-section">
 		<h2>Let's Work Together</h2>
-		<p>Interested in collaborating on a project? I'm always open to new opportunities in frontend development, 
-		Shopify solutions, or e-commerce platform development.</p>
+		<p>
+			Interested in collaborating on a project? I'm always open to new opportunities in frontend
+			development, Shopify solutions, or e-commerce platform development.
+		</p>
 		<a href="/contact" class="cta-button">Get In Touch</a>
 	</section>
 </div>
@@ -226,7 +251,9 @@
 		border: 1px solid var(--color-border);
 		border-radius: 12px;
 		padding: 2rem;
-		transition: border-color 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	.project-card:hover {
@@ -381,13 +408,13 @@
 		.skills-grid {
 			grid-template-columns: 1fr;
 		}
-		
+
 		.project-grid {
 			grid-template-columns: 1fr;
 		}
-		
+
 		.approach-grid {
 			grid-template-columns: 1fr;
 		}
 	}
-</style> 
+</style>

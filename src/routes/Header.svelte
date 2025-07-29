@@ -11,8 +11,11 @@
 			</div>
 			<ul class="nav-links">
 				<li>
-					<a href="/" class={$page.url.pathname === '/' ? 'active' : ''}>
-						HOME
+					<a href="/" class={$page.url.pathname === '/' ? 'active' : ''}> HOME </a>
+				</li>
+				<li>
+					<a href="/coding" class={$page.url.pathname.startsWith('/coding') ? 'active' : ''}>
+						CODING
 					</a>
 				</li>
 				<li>
@@ -23,11 +26,6 @@
 				<li>
 					<a href="/circuits" class={$page.url.pathname.startsWith('/circuits') ? 'active' : ''}>
 						CIRCUITS
-					</a>
-				</li>
-				<li>
-					<a href="/coding" class={$page.url.pathname.startsWith('/coding') ? 'active' : ''}>
-						CODING
 					</a>
 				</li>
 				<li>
@@ -51,7 +49,9 @@
 		position: sticky;
 		top: 0;
 		z-index: 100;
-		transition: background-color 0.3s ease, border-color 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			border-color 0.3s ease;
 	}
 
 	nav {

@@ -1,10 +1,13 @@
 <script>
-  import banner from '$lib/images/av-red-title-card.jpg';
+	import banner from '$lib/images/av-red-title-card.jpg';
 </script>
 
 <svelte:head>
-    <title>Aubin Vanns - Portfolio</title>
-    <meta name="description" content="Musician, Developer & Circuit Designer - Portfolio of Aubin Vanns"/>
+	<title>Aubin Vanns - Portfolio</title>
+	<meta
+		name="description"
+		content="Musician, Developer & Circuit Designer - Portfolio of Aubin Vanns"
+	/>
 </svelte:head>
 
 <div class="home-page">
@@ -13,9 +16,8 @@
 			<h1>AUBIN VANNS</h1>
 			<p class="tagline">MUSICIAN • DEVELOPER • PEDAL BUILDER</p>
 			<p class="description">
-				I write code, make music, and build circuits. 
-				Sometimes I combine all three. 
-				Here's what I've been working on.
+				I write code, make music, and build circuits. Sometimes I combine all three. Here's what
+				I've been working on.
 			</p>
 		</div>
 		<div class="hero-image">

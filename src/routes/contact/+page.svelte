@@ -6,16 +6,19 @@
 </script>
 
 <svelte:head>
-    <title>Contact - Aubin Vanns</title>
-    <meta name="description" content="Get in touch with Aubin Vanns for collaborations and inquiries" />
+	<title>Contact - Aubin Vanns</title>
+	<meta
+		name="description"
+		content="Get in touch with Aubin Vanns for collaborations and inquiries"
+	/>
 </svelte:head>
 
 <div class="contact-page">
 	<div class="page-header">
 		<h1>Contact</h1>
 		<p class="intro">
-			I'm always interested in new collaborations, whether it's music production, 
-			circuit design, software development, or creative projects. Let's discuss your ideas!
+			I'm always interested in new collaborations, whether it's music production, circuit design,
+			software development, or creative projects. Let's discuss your ideas!
 		</p>
 	</div>
 
@@ -39,12 +42,12 @@
 					<label for="name">Name</label>
 					<input type="text" id="name" name="name" required />
 				</div>
-				
+
 				<div class="form-group">
 					<label for="email">Email</label>
 					<input type="email" id="email" name="email" required />
 				</div>
-				
+
 				<div class="form-group">
 					<label for="subject">Subject</label>
 					<select id="subject" name="subject" required>
@@ -55,12 +58,12 @@
 						<option value="general">General Inquiry</option>
 					</select>
 				</div>
-				
+
 				<div class="form-group">
 					<label for="message">Message</label>
 					<textarea id="message" name="message" rows="6" required></textarea>
 				</div>
-				
+
 				<button type="submit" class="submit-btn">Send Message</button>
 			</form>
 		</section>
@@ -202,4 +205,4 @@
 			font-size: 2.5rem;
 		}
 	}
-</style> 
+</style>

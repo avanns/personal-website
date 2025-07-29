@@ -45,7 +45,7 @@ export const actions: Actions = {
 			};
 
 			const emailSubject = `Portfolio Contact: ${subjectMap[subject] || subject}`;
-			
+
 			const emailContent = `
 				New contact form submission from your portfolio website:
 				
@@ -71,16 +71,15 @@ export const actions: Actions = {
 
 			return {
 				success: true,
-				message: 'Thank you for your message! I\'ll get back to you soon.'
+				message: "Thank you for your message! I'll get back to you soon."
 			};
-
 		} catch (error) {
 			console.error('Email sending error:', error);
-			
+
 			return {
 				success: false,
 				message: 'Sorry, there was an error sending your message. Please try again later.'
 			};
 		}
 	}
-}; 
+};
