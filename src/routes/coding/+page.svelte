@@ -12,9 +12,9 @@
 	<div class="page-header">
 		<h1>Coding</h1>
 		<p class="intro">
-			I develop software solutions that bridge the gap between technology and creativity. 
-			From web applications to audio processing tools, I create code that serves both 
-			functional and artistic purposes.
+			I specialize in frontend development with extensive experience in React, TypeScript, and the Shopify ecosystem. 
+			From custom e-commerce solutions to scalable web applications, I create robust, 
+			user-centered experiences that drive business growth.
 		</p>
 	</div>
 
@@ -24,28 +24,32 @@
 			<div class="skill-category">
 				<h3>Frontend</h3>
 				<ul>
-					<li>Svelte & SvelteKit</li>
 					<li>React & Next.js</li>
 					<li>TypeScript</li>
-					<li>CSS & Tailwind</li>
+					<li>Zod (Schema Validation)</li>
+					<li>Tanstack Query</li>
+					<li>GraphQL</li>
+					<li>Playwright (Testing)</li>
 				</ul>
 			</div>
 			<div class="skill-category">
 				<h3>Backend</h3>
 				<ul>
-					<li>Node.js</li>
-					<li>Python</li>
-					<li>PostgreSQL</li>
+					<li>PHP</li>
+					<li>Laravel</li>
+					<li>AWS Services</li>
+					<li>Terraform (IaC)</li>
 					<li>REST APIs</li>
 				</ul>
 			</div>
 			<div class="skill-category">
-				<h3>Audio & Music</h3>
+				<h3>Shopify Ecosystem</h3>
 				<ul>
-					<li>Web Audio API</li>
-					<li>Tone.js</li>
-					<li>Max/MSP</li>
-					<li>Audio Processing</li>
+					<li>Shopify Theme Development</li>
+					<li>Shopify App Development</li>
+					<li>Custom Shopify Solutions</li>
+					<li>Liquid Templating</li>
+					<li>Shopify API Integration</li>
 				</ul>
 			</div>
 			<div class="skill-category">
@@ -53,8 +57,9 @@
 				<ul>
 					<li>Git & GitHub</li>
 					<li>Docker</li>
-					<li>AWS</li>
+					<li>AWS (EC2, S3, Lambda)</li>
 					<li>Netlify</li>
+					<li>CI/CD Pipelines</li>
 				</ul>
 			</div>
 		</div>
@@ -78,11 +83,11 @@
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>Audio Visualizer</h3>
+					<h3>E-commerce Platform</h3>
 				</div>
-				<p>Real-time audio visualization tool built with Web Audio API and Canvas for live performance integration.</p>
+				<p>Custom Shopify theme with advanced features, custom app integrations, and optimized performance for high-traffic stores.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/audio-visualizer" target="_blank" class="github-link">
+					<a href="https://github.com/yourusername/shopify-theme" target="_blank" class="github-link">
 						<img src={githubIcon} alt="GitHub" />
 						View Code
 					</a>
@@ -90,11 +95,11 @@
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>Circuit Designer</h3>
+					<h3>Shopify App</h3>
 				</div>
-				<p>Interactive web application for designing and simulating electronic circuits with real-time feedback.</p>
+				<p>Custom Shopify app built with React, TypeScript, and Laravel backend for inventory management and analytics.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/circuit-designer" target="_blank" class="github-link">
+					<a href="https://github.com/yourusername/shopify-app" target="_blank" class="github-link">
 						<img src={githubIcon} alt="GitHub" />
 						View Code
 					</a>
@@ -102,11 +107,11 @@
 			</div>
 			<div class="project-card">
 				<div class="project-header">
-					<h3>Music Production Tool</h3>
+					<h3>Infrastructure as Code</h3>
 				</div>
-				<p>Web-based DAW with custom effects and real-time audio processing capabilities.</p>
+				<p>Terraform configurations for AWS infrastructure, including auto-scaling, load balancing, and CI/CD pipelines.</p>
 				<div class="project-links">
-					<a href="https://github.com/yourusername/music-tool" target="_blank" class="github-link">
+					<a href="https://github.com/yourusername/terraform-aws" target="_blank" class="github-link">
 						<img src={githubIcon} alt="GitHub" />
 						View Code
 					</a>
@@ -119,24 +124,24 @@
 		<h2>Development Approach</h2>
 		<div class="approach-grid">
 			<div class="approach-card">
-				<h3>User-Centered Design</h3>
-				<p>Every project starts with understanding user needs and creating intuitive, accessible interfaces.</p>
+				<h3>Type-Safe Development</h3>
+				<p>Leveraging TypeScript and Zod for robust, maintainable code with excellent developer experience.</p>
 			</div>
 			<div class="approach-card">
-				<h3>Performance First</h3>
-				<p>Optimizing for speed and efficiency, ensuring smooth experiences across all devices.</p>
+				<h3>E-commerce Excellence</h3>
+				<p>Deep Shopify expertise from theme customization to custom app development and API integrations.</p>
 			</div>
 			<div class="approach-card">
-				<h3>Creative Solutions</h3>
-				<p>Combining technical expertise with artistic vision to create unique digital experiences.</p>
+				<h3>Scalable Architecture</h3>
+				<p>Building with AWS, Terraform, and modern DevOps practices for reliable, scalable solutions.</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="contact-section">
 		<h2>Let's Work Together</h2>
-		<p>Interested in collaborating on a project? I'm always open to new opportunities in web development, 
-		audio software, or creative coding projects.</p>
+		<p>Interested in collaborating on a project? I'm always open to new opportunities in frontend development, 
+		Shopify solutions, or e-commerce platform development.</p>
 		<a href="/contact" class="cta-button">Get In Touch</a>
 	</section>
 </div>
