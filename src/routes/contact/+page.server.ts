@@ -2,13 +2,13 @@ import type { Actions } from '@sveltejs/kit';
 import { Resend } from 'resend';
 
 // Initialize Resend with your API key
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
 
 // Your email address where you want to receive contact form messages
-const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
+const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL;
 
 // Optional custom from email (if you have a custom domain configured in Resend)
-const FROM_EMAIL = process.env.FROM_EMAIL || 'Portfolio Contact Form <noreply@yourdomain.com>';
+const FROM_EMAIL = import.meta.env.VITE_FROM_EMAIL || 'Portfolio Contact Form <noreply@yourdomain.com>';
 
 export const actions: Actions = {
 	default: async ({ request }) => {
@@ -77,7 +77,7 @@ export const actions: Actions = {
 				};
 			}
 
-			console.log('Email sent successfully', jsonResponse);
+			console.log('Email sent successfully', response.data);
 
 			return {
 				success: true,
