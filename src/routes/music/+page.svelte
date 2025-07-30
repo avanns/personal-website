@@ -1,8 +1,5 @@
 <script>
-	import albumLaunch from '$lib/images/music/Aubin Album Launch Vortex-5492.jpg';
 	import nightShoot from '$lib/images/music/AUBIN NIGHT SHOOT-1713.jpg';
-	import dsc02791 from '$lib/images/music/DSC02791.jpg';
-	import dsc03934 from '$lib/images/music/DSC03934.JPG';
 	import dsc03944 from '$lib/images/music/DSC03944.JPG';
 	import s16a6151 from '$lib/images/music/S16A6151.jpg';
 </script>

@@ -1,6 +1,6 @@
 import type { Actions } from '@sveltejs/kit';
 import { Resend } from 'resend';
-import { RESEND_API_KEY, RECIPIENT_EMAIL, FROM_EMAIL } from '$env/static/private';
+import { RESEND_API_KEY, RECIPIENT_EMAIL } from '$env/static/private';
 
 // Initialize Resend with your API key
 const resend = new Resend(RESEND_API_KEY);
@@ -57,7 +57,7 @@ export const actions: Actions = {
 
 			// Send email using Resend
 			const response = await resend.emails.send({
-				from: FROM_EMAIL,
+				from: 'Portfolio Contact Form <noreply@aubinvanns.com>',
 				to: [RECIPIENT_EMAIL],
 				subject: emailSubject,
 				text: emailContent,
