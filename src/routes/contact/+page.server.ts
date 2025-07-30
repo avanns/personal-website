@@ -61,13 +61,23 @@ export const actions: Actions = {
 			`;
 
 			// Send email using Resend
-			await resend.emails.send({
+			const response = await resend.emails.send({
 				from: FROM_EMAIL,
 				to: [RECIPIENT_EMAIL],
 				subject: emailSubject,
 				text: emailContent,
 				replyTo: email // This allows you to reply directly to the sender
 			});
+
+			if (response.error) {
+				console.error('Email sending error:', response.error);
+				return {
+					success: false,
+					message: 'Sorry, there was an error sending your message. Please try again later.'
+				};
+			}
+
+			console.log('Email sent successfully', response.data);
 
 			return {
 				success: true,
